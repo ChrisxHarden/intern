@@ -245,7 +245,8 @@ history=model_trail.fit(
     train_generator,
     steps_per_epoch=56966/BATCHSIZE,
     epochs=300,
-    callbacks=[tensorboard_callback,checkpoint]
+    callbacks=[tensorboard_callback,checkpoint,reduce_lr],
+    verbose=2
 )
 #history = model_trail.fit(x_train, y_train, epochs=100,batch_size=25,callbacks=[tensorboard_callback,checkpoint],validation_data=(x_val,y_val))
 #history = model_trail.fit(x_train, y_train, epochs=10,batch_size=25,callbacks=[tensorboard_callback,checkpoint],validation_data=(x_val,y_val))
