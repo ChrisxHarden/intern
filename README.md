@@ -1,6 +1,6 @@
 # intern_in_cisco
 this is a record of what I have done and plan to do during my internship
-# 工作:
+# 2021.08.09工作:
 
 ## 模型搭建与训练: 
 模型训练和搭建文件:trail.py 
